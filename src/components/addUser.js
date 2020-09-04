@@ -19,7 +19,7 @@ const AddUser = (props) => {
     props.addUser(user)
     setUser(initialFormState)
   }
-
+  console.log("")
   return (
     <Form onSubmit={handleAddUser}>
       <h3>Add User</h3>
