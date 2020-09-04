@@ -4,10 +4,17 @@ import './index.css';
 import App from './components/index';
 import 'bootstrap/dist/css/bootstrap.css';
 import * as serviceWorker from './serviceWorker';
+import ContextApp from './components/contextComponents/ContextApp'
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ContextApp />
   </React.StrictMode>,
   document.getElementById('root')
 );

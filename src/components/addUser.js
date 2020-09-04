@@ -1,5 +1,6 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import React, { useState } from 'react';
+import { Button, Form } from 'reactstrap';
+import InputBox from '../components/CommonComponents/InputBox'
 
 const AddUser = (props) => {
   console.log("add");
@@ -19,24 +20,11 @@ const AddUser = (props) => {
     setUser(initialFormState)
   }
 
-  // const inputRef = useRef(null);
-  // useEffect(() => {
-  //   console.log(inputRef)
-  //   inputRef.current.focus();
-  // }, []);
-
-
   return (
     <Form onSubmit={handleAddUser}>
       <h3>Add User</h3>
-      <FormGroup>
-        <Label>Name</Label>
-        <Input type="text" name="name" placeholder="enter name" value={user.name} /* ref={inputRef} */ onChange={handleInputChange} />
-      </FormGroup>
-      <FormGroup>
-        <Label>UserName</Label>
-        <Input type="text" name="username" placeholder="enter username" value={user.username} onChange={handleInputChange} />
-      </FormGroup>
+      <InputBox name="name" placeholder="enter name" value={user.name} onChange={handleInputChange} />
+      <InputBox name="username" placeholder="enter username" value={user.username} onChange={handleInputChange} />
       <Button>Submit</Button>
     </Form>
   );
