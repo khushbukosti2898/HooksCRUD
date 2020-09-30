@@ -4,13 +4,15 @@ import './index.css';
 import App from './components/index';
 import 'bootstrap/dist/css/bootstrap.css';
 import * as serviceWorker from './serviceWorker';
-// import ContextApp from './components/contextComponents/ContextApp'
+// import ContextApp from './components/contextComponents/ContextApp';
+import MapDemo from './components/MapComponent/MapDemo';
 import ReactTableEx from './components/ReactTable/App';
 
 ReactDOM.render(
   <React.StrictMode>
     <App/>
     <ReactTableEx />
+    <MapDemo/>
   </React.StrictMode>,
   document.getElementById('root')
 );
