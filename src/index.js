@@ -5,13 +5,7 @@ import App from './components/index';
 import 'bootstrap/dist/css/bootstrap.css';
 import * as serviceWorker from './serviceWorker';
 // import ContextApp from './components/contextComponents/ContextApp'
-import ReactTableEx from './ReactTable/App'
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
+import ReactTableEx from './components/ReactTable/App';
 
 ReactDOM.render(
   <React.StrictMode>
