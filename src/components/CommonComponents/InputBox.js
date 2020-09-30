@@ -3,7 +3,6 @@ import { PropTypes } from 'prop-types';
 import { FormGroup } from 'reactstrap';
 
 const InputBox = props => {
-  console.log("Textbox Rendered");
   const { title, isRequired, disabled, className, name, type, value, style, placeholder,
     onChange, onBlur, required, error } = props;
 

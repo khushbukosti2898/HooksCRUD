@@ -3,7 +3,6 @@ import { Button, Form } from 'reactstrap';
 import InputBox from '../components/CommonComponents/InputBox'
 
 const AddUser = (props) => {
-  console.log("add");
   const initialFormState = { id: null, name: '', username: '' };
 
   const [user, setUser] = useState(initialFormState);
@@ -19,7 +18,6 @@ const AddUser = (props) => {
     props.addUser(user)
     setUser(initialFormState)
   }
-  console.log("")
   return (
     <Form onSubmit={handleAddUser}>
       <h3>Add User</h3>

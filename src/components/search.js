@@ -1,7 +1,6 @@
 import React, { useState, useCallback } from "react";
 import InputBox from '../components/CommonComponents/InputBox';
 const Search = (props) => {
-  console.log("search")
   const [searchValue, setSearchValue] = useState("");
   const [data, setData] = useState("");
 

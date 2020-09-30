@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 const EditUser = (props) => {
-  console.log("edit");
   const [user, setUser] = useState(props.currentUser)
 
   useEffect(() => { setUser(props.currentUser) }, [props])

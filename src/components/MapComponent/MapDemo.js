@@ -29,7 +29,6 @@ class MapDemo extends React.Component {
   };
 
   handleToggleClose = () => {
-    console.log("h")
     this.setState({
       selectedPlace: {},
       activeMarker: {},
