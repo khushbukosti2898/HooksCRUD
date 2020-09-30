@@ -4,7 +4,8 @@ import './index.css';
 import App from './components/index';
 import 'bootstrap/dist/css/bootstrap.css';
 import * as serviceWorker from './serviceWorker';
-import ContextApp from './components/contextComponents/ContextApp'
+// import ContextApp from './components/contextComponents/ContextApp'
+import ReactTableEx from './ReactTable/App'
 // ReactDOM.render(
 //   <React.StrictMode>
 //     <App />
@@ -14,7 +15,8 @@ import ContextApp from './components/contextComponents/ContextApp'
 
 ReactDOM.render(
   <React.StrictMode>
-    <ContextApp />
+    <App/>
+    <ReactTableEx />
   </React.StrictMode>,
   document.getElementById('root')
 );
